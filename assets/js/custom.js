@@ -122,5 +122,28 @@
 	});
     
 
+	// Adjust property address display for small screens
+	$(window).on('load resize', function() {
+	  if ($(window).width() < 576) {
+	    // Shorten property addresses on small screens
+	    $(".properties .item h4 a, .single-property .main-content h4").each(function() {
+	      let text = $(this).text();
+	      if (text.includes("103 street 7 Casablanca, 50500")) {
+	        $(this).attr('data-full-address', text);
+	        $(this).text("103 st. 7, Casa.");
+	      }
+	    });
+	  } else {
+	    // Restore original addresses on larger screens
+	    $(".properties .item h4 a, .single-property .main-content h4").each(function() {
+	      let fullAddress = $(this).attr('data-full-address');
+	      if (fullAddress) {
+	        $(this).text(fullAddress);
+	      }
+	    });
+	  }
+	});
+
+
 
 })(window.jQuery);

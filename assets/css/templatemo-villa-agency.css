@@ -1826,3 +1826,155 @@ body {
     margin-right: 100px;
   }
 }
+
+/* Add these styles at the end of your CSS file */
+
+/* Responsive adjustments for small screens */
+@media (max-width: 576px) {
+  /* Property cards */
+  .properties .item {
+    padding: 20px;
+  }
+  
+  .properties .item h6,
+  .properties .item h4 {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+  
+  .properties .item ul li {
+    font-size: 13px;
+    margin-right: 5px;
+  }
+  
+  /* Property listings */
+  .properties .item span.category {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+  
+  /* Main banner */
+  .main-banner .item h2 {
+    font-size: 42px;
+    line-height: 52px;
+    width: 80%;
+  }
+  
+  /* Accordion content */
+  .accordion-instead {
+    font-size: 14px;
+  }
+  
+  /* Info tables */
+  .info-table ul li h4 {
+    font-size: 18px;
+  }
+  
+  /* Contact form */
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 13px;
+  }
+  
+  /* Fix navigation menu */
+  .header-area .main-nav .nav li {
+    height: auto;
+    line-height: normal;
+    padding: 10px 0;
+  }
+  
+  /* Make property cards display in single column */
+  .properties .col-lg-4.col-md-6 {
+    width: 100%;
+  }
+  
+  /* Adjust section paddings */
+  .section {
+    padding: 60px 0;
+  }
+  
+  /* Fix owl carousel nav buttons */
+  .main-banner .owl-nav .owl-prev i {
+    left: 15px;
+  }
+  
+  .main-banner .owl-nav .owl-next i {
+    right: 15px;
+  }
+  
+  /* Make property detail tabs more usable */
+  .best-deal .tabs-content ul.nav-tabs li {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  /* Map section responsiveness */
+  .contact-content #map,
+  .contact-page #map {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .contact-content {
+    margin-top: -180px;
+  }
+  
+  .contact {
+    padding-bottom: 200px;
+  }
+  
+  .contact-content .phone,
+  .contact-content .email {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  
+  .contact-content .item {
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .contact-content .item img {
+    margin-right: 15px;
+  }
+  
+  .contact-content .item h6 {
+    font-size: 16px;
+  }
+  
+  .contact-content .item h6 span {
+    font-size: 13px;
+  }
+  
+  .contact-page .item {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+/* Tablet and medium screens map adjustments */
+@media (min-width: 577px) and (max-width: 991px) {
+  .contact-content #map,
+  .contact-page #map {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .contact-content {
+    margin-top: -200px;
+  }
+  
+  .contact-content .phone,
+  .contact-content .email {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  
+  .contact-page .item {
+    min-width: 300px;
+    width: 100%;
+  }
+}
