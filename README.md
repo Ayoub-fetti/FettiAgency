@@ -21,7 +21,4 @@ This project is intended as a **front-end demo** and can be adapted or extended 
 - **CSS3** – Custom styles, Flexbox/Grid layout, and responsive design.  
 - **JavaScript (ES6)** – Simple interactivity such as navigation toggles, animations, and dynamic content.
 
----
-
-## 📂 Project Structure
 
